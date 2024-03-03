@@ -1,0 +1,81 @@
+||| BASIC CREATION OF A WEBSITE |||
+
+*** Base Server ***
+
+- This is the server that all the software will be located on.
+- Can be hardware, VM or even a docker container.
+
+*** OS ***
+
+- This is the os that will be used to manage your base server
+- Can be Linux, Windows, or Unix varient.
+
+*** Web Server Software ***
+
+- This is what handles the serving of web content efficiently
+- Examples include Nginx or Apache HTTP Server
+
+*** Backend Server Langauge/Framework ***
+
+- This handles interacting with databases and generating dynamic content.
+- These frameworks provide tools and libraries to build web applications and APIs.
+
+*** Database ***
+
+- Stores data for the application
+- Backend language interacts to manipulate data for the application
+
+*** Frontend Files ***
+
+- Define the presentation of the website
+- Examples include HTML, CSS, and javascript
+
+||| GITHUB |||
+
+- Create your repo
+- Create a branch for each task
+- Test and add features to the branch
+- Push and merge to the main branch on GitHub
+- Delete the branch on your local pc and GitHub
+- Git pull origin main to update the main on your pc
+- Create another branch for the next taskto add to the codebase
+
+||| DOCKER |||
+
+*** Basic Docker Info ***
+
+- Docker files create a custom image
+- Docker files are named: Dockerfile
+- Images are used to create containers
+- Containers are instances of images
+- # starts a comment && this \ continues the command
+
+*** Docker Commands ***
+
+# Build an image from the Dockerfile using context of the PWD :
+
+- docker build -t image_name .
+
+# Build an Image from a Dockerfile in a specific directory :
+
+- docker build -f /path/to/Dockerfile -t image_name /path/to/build_context
+
+# Removes the docker container by name :
+
+- docker rm container_name
+
+# starts a container based on the image :
+
+- docker run image_name
+
+# starts a container based on the image in interactive mode :
+
+- docker run -it image_name
+
+# starts a named container based on the image :
+
+- docker run -it --name my_custom_name image_name
+
+# starts a named container based on the image and removes it once exited :
+
+- docker run -it --rm --name my_custom_name image_name
